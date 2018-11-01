@@ -45,6 +45,27 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}
+		else if (findKeyword(statement, "dog") >= 0
+			 || findKeyword(statement, "hamster") >= 0
+			 || findKeyword(statement, "turtle") >= 0
+			 || findKeyword(statement, "bird") >= 0)
+		{
+			response = "Tell me more about your pets!";
+		}
+		else if (findKeyword(statement, "Mr. Folwell") >= 0
+			 || findKeyword(statement, "Ms. Worrell") >= 0
+			 || findKeyword(statement, "Mr. Ree") >= 0
+			 || findKeyword(statement, "Mr. Silverman") >= 0)
+		{
+			response = "They sound like an amazing teacher. That's nice!";
+		}
+		else if (findKeyword(statement, "politics") >= 0
+			 || findKeyword(statement, "election") >= 0
+			 || findKeyword(statement, "vote") >= 0
+			 || findKeyword(statement, "Trump") >= 0)
+		{
+			response = "What are your views on the current state of politics in the U.S.?";
+		}
 		else
 		{
 			response = getRandomResponse();
