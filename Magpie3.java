@@ -66,6 +66,13 @@ public class Magpie3
 		{
 			response = "What are your views on the current state of politics in the U.S.?";
 		}
+		else if (findKeyword(statement, "music") >= 0
+			 || findKeyword(statement, "hip-hop") >= 0
+			 || findKeyword(statement, "Beyonce") >= 0
+			 || findKeyword(statement, "song") >= 0)
+		{
+			response = "What is your favorite song at the moment?";
+		}
 		else
 		{
 			response = getRandomResponse();
